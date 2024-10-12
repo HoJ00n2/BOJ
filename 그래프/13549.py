@@ -22,7 +22,7 @@ while q:
             continue
         if nxt == cur*2:
             if visited[nxt] > t:
-                q.appendleft((nxt,t))
+                q.append((nxt,t)) # appenleft 안해도 되긴함, 관건은 그냥 똑같은 가중치가 아니어도 bfs를 쓸 수 있나를 묻는 문제
                 visited[nxt] = t
         else:
             if visited[nxt] > t+1:
